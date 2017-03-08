@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>-pre= -hash1=E4BE6DF2 -post=.sph -hash2=E4BE6DF2 -ext=sph -alpha=abcdefghijklmnopqrstuvwxyz_</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'dehasher|AnyCPU'">
+    <StartArguments>-s=textures/gui/prologue_instruction_controller_ -e=_button -h=17F0067F -c=4</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'extractor|AnyCPU'">
+    <StartArguments>-s=textures/gui/prologue_instruction_controller_ -e=_button -h=17F0067F -c=4</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'randomer|AnyCPU'">
+    <StartArguments>-s=textures/gui/prologue_instruction_controller_ -e=_button -h=17F0067F -c=4</StartArguments>
+  </PropertyGroup>
+</Project>
