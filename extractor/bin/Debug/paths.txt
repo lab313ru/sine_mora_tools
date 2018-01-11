@@ -920,6 +920,8 @@ objects/levels/enkie_city/lods_norm
 objects/levels/enkie_city/losei head_diff
 objects/levels/enkie_city/losei head_norm
 objects/levels/enkie_city/losei_head
+objects/levels/enkie_city/losei_head_diff
+objects/levels/enkie_city/losei_head_norm
 objects/levels/enkie_city/mattepaint
 objects/levels/enkie_city/mattepaint_diff
 objects/levels/enkie_city/mattepaint_mask
@@ -1190,6 +1192,7 @@ objects/levels/monetapoint/bush_diff
 objects/levels/monetapoint/cave
 objects/levels/monetapoint/cave_collision
 objects/levels/monetapoint/cave_entrance
+objects/levels/monetapoint/chall_rockwalll_diff
 objects/levels/monetapoint/chall_sand_diff
 objects/levels/monetapoint/coral
 objects/levels/monetapoint/defaultmask
@@ -2835,10 +2838,12 @@ scenes/gui_ingame
 scenes/gui_loading
 scenes/gui_loading_logos
 scenes/gui_loading_logos_ps3
+scenes/gui_loading_logos_thq
 scenes/gui_mainmenu
 scenes/gui_texttyper
 scenes/guiscene_ingame
 scenes/guiscene_mainmenu
+scenes/guiscene_versus
 scenes/imperial_aiborg_factory
 scenes/last_enkie_city
 scenes/localsettings
@@ -2850,6 +2855,7 @@ scenes/manipulate_02
 scenes/manipulate_03
 scenes/moneta_point
 scenes/player_global
+scenes/player_global_dualaxis
 scenes/prologue
 scenes/siriad
 scenes/sound_mix
@@ -2857,6 +2863,8 @@ scenes/survive_01
 scenes/survive_02
 scenes/survive_03
 scenes/tira
+scenes/versus_2
+scenes/versus_3
 scripts/achievements
 scripts/aim_01
 scripts/aim_02
