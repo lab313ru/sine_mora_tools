@@ -2679,6 +2679,7 @@ render/materials/lit_atest
 render/materials/lit_metal
 render/materials/lit_metal_fad2
 render/materials/lit_metal_fade
+render/materials/lit_metal_paint
 render/materials/lit_metal_skin
 render/materials/lit_skin
 render/materials/particle
