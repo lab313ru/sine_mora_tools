@@ -2682,6 +2682,7 @@ render/materials/lit_metal_fade
 render/materials/lit_metal_paint
 render/materials/lit_metal_skin
 render/materials/lit_skin
+render/materials/ng_resolve
 render/materials/particle
 render/materials/particle-ocean
 render/materials/particle2d
