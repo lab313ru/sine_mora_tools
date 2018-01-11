@@ -4519,6 +4519,7 @@ textures/gui/frontend/intrologo_dr
 textures/gui/frontend/intrologo_grasshopper
 textures/gui/frontend/intrologo_live
 textures/gui/frontend/intrologo_microsoft
+textures/gui/frontend/intrologo_thq
 textures/gui/frontend/l4z_license
 textures/gui/frontend/label-achievements
 textures/gui/frontend/label-challenges_ps3
