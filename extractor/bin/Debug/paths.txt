@@ -2749,6 +2749,7 @@ render/shaders/lit_metal
 render/shaders/lit_metal_simplified
 render/shaders/lit_simplified
 render/shaders/lit_skin
+render/shaders/ng_resolve
 render/shaders/particle
 render/shaders/particle-decal
 render/shaders/particle-ground
