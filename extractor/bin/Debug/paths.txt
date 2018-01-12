@@ -37,6 +37,7 @@ gui_loading_logos
 gui_loading_logos_ps3
 guiscene_ingame
 guiscene_mainmenu
+guiscene_versus
 imperial_aiborg_factory
 last_enkie_city
 localization/brazilian
@@ -5048,4 +5049,7 @@ textures/watersplash_anim_01
 textures/weakspot_01
 textures/weakspot_02
 tira
+versus_1
+versus_2
+versus_3
 white
