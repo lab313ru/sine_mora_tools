@@ -4011,6 +4011,8 @@ sounds/voiceover/tira/tira07
 sounds/voiceover/tira/tira08
 spot
 subtitles/bokumono
+subtitles/bokumono_brz
+subtitles/bokumono_chi
 subtitles/bokumono_eng
 subtitles/bokumono_fre
 subtitles/bokumono_ger
@@ -4019,6 +4021,8 @@ subtitles/bokumono_jap
 subtitles/bokumono_por
 subtitles/bokumono_spa
 subtitles/canyon
+subtitles/canyon_brz
+subtitles/canyon_chi
 subtitles/canyon_eng
 subtitles/canyon_fre
 subtitles/canyon_ger
@@ -4027,6 +4031,8 @@ subtitles/canyon_jap
 subtitles/canyon_por
 subtitles/canyon_spa
 subtitles/epilogue
+subtitles/epilogue_brz
+subtitles/epilogue_chi
 subtitles/epilogue_eng
 subtitles/epilogue_fre
 subtitles/epilogue_ger
@@ -4035,6 +4041,8 @@ subtitles/epilogue_jap
 subtitles/epilogue_por
 subtitles/epilogue_spa
 subtitles/factory
+subtitles/factory_brz
+subtitles/factory_chi
 subtitles/factory_eng
 subtitles/factory_fre
 subtitles/factory_ger
@@ -4043,6 +4051,8 @@ subtitles/factory_jap
 subtitles/factory_por
 subtitles/factory_spa
 subtitles/last_enkie_city
+subtitles/last_enkie_city_brz
+subtitles/last_enkie_city_chi
 subtitles/last_enkie_city_eng
 subtitles/last_enkie_city_fre
 subtitles/last_enkie_city_ger
@@ -4051,6 +4061,8 @@ subtitles/last_enkie_city_jap
 subtitles/last_enkie_city_por
 subtitles/last_enkie_city_spa
 subtitles/moneta_point
+subtitles/moneta_point_brz
+subtitles/moneta_point_chi
 subtitles/moneta_point_eng
 subtitles/moneta_point_fre
 subtitles/moneta_point_ger
@@ -4059,6 +4071,8 @@ subtitles/moneta_point_jap
 subtitles/moneta_point_por
 subtitles/moneta_point_spa
 subtitles/prologue
+subtitles/prologue_brz
+subtitles/prologue_chi
 subtitles/prologue_eng
 subtitles/prologue_fre
 subtitles/prologue_ger
@@ -4067,6 +4081,8 @@ subtitles/prologue_jap
 subtitles/prologue_por
 subtitles/prologue_spa
 subtitles/siriad
+subtitles/siriad_brz
+subtitles/siriad_chi
 subtitles/siriad_eng
 subtitles/siriad_fre
 subtitles/siriad_ger
@@ -4075,6 +4091,8 @@ subtitles/siriad_jap
 subtitles/siriad_por
 subtitles/siriad_spa
 subtitles/tira
+subtitles/tira_brz
+subtitles/tira_chi
 subtitles/tira_eng
 subtitles/tira_fre
 subtitles/tira_ger
