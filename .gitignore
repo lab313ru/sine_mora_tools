@@ -6,3 +6,6 @@ randomer/obj/
 *.pdb
 hash*_log.txt
 list.txt
+*.exe
+good.txt
+hash_nf.txt
