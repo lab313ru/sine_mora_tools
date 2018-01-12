@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
 
 namespace extractor
 {
@@ -437,6 +438,54 @@ namespace extractor
             return (sum == 0 ? 0 : sum - 1);
         }
 
+        static void gen_caches(List<string> output_list)
+        {
+            string[] types = new string[] { "vs_3_0", "ps_3_0" };
+            const string mask = "render/cache/{0:x8}_{1:x}_{2:x}_{3:x}_windows";
+
+            List<string> caches = new List<string>();
+
+            List<string> shaders = new List<string>();
+            shaders.AddRange(File.ReadAllLines("shaders.txt"));
+
+            Regex reg = new Regex("\"(\\w+)\" : \\[\"(\\w+\\.hlsl)\", \"(\\w+)\".*\\]");
+            foreach(string shader in shaders)
+            {
+                uint x0_0 = sdbm(types[0]);
+                uint x0_1 = sdbm(types[1]);
+
+                Match match = reg.Match(shader);
+
+                if (match.Success)
+                {
+                    string vsps = match.Groups[1].Value.ToString();
+                    string path = match.Groups[2].Value.ToString();
+                    string type = match.Groups[3].Value.ToString();
+
+                    uint x1 = 0;
+                    foreach (string file in output_list)
+                    {
+                        if (!file.Contains(path))
+                            continue;
+
+                        string text = File.ReadAllText(file);
+                        x1 = sdbm(text);
+                        break;
+                    }
+
+                    uint x2 = sdbm(type);
+
+                    for (int i = 0; i < 100; ++i)
+                    {
+                        caches.Add(string.Format(mask, x0_0, x1, x2, i));
+                        caches.Add(string.Format(mask, x0_1, x1, x2, i));
+                    }
+                }
+            }
+
+            File.WriteAllLines("caches.txt", caches);
+        }
+
         static unsafe void Main(string[] args)
         {
             //Console.WriteLine("step 1");
@@ -475,6 +524,8 @@ namespace extractor
             if (File.Exists("good.txt")) good.AddRange(File.ReadAllLines("good.txt"));
             string[] list = File.ReadAllLines(args[0]);
 
+            List<string> output_list = new List<string>();
+
             int len = list.Length;
             for (int i = 0; i < len; i++)
             {
@@ -512,6 +563,8 @@ namespace extractor
                         File.Delete(path + Path.DirectorySeparatorChar + h1 + ext);
                     }
 
+                    output_list.Add(fname);
+
                     if (h1 != name)
                     {
                         if (good.IndexOf(name) == -1)
@@ -531,6 +584,8 @@ namespace extractor
                 }
             }
             File.WriteAllLines("good.txt", good);
+
+            // gen_caches(output_list);
         }
     }
 }
