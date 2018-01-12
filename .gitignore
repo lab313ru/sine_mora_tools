@@ -4,6 +4,5 @@ extractor/obj/
 randomer/obj/
 *.config
 *.pdb
-hash1_log.txt
-hash2_log.txt
+hash*_log.txt
 list.txt
