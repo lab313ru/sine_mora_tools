@@ -2914,6 +2914,7 @@ scripts/pause
 scripts/phalangium_main_script
 scripts/precompiled_scripts
 scripts/precompiled_scripts32
+scripts/precompiled_scripts64
 scripts/prologue
 scripts/random_message
 scripts/rosetta_main_script
