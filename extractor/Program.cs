@@ -448,7 +448,7 @@ namespace extractor
             List<string> shaders = new List<string>();
             shaders.AddRange(File.ReadAllLines("shaders.txt"));
 
-            Regex reg = new Regex("\"(\\w+)\" : \\[\"(\\w+\\.hlsl)\", \"(\\w+)\".*\\]");
+            Regex reg = new Regex("\"(\\w+)\" : \\[\"([\\w-]+\\.hlsl)\", \"(\\w+)\".*\\]");
             foreach(string shader in shaders)
             {
                 uint x0_0 = sdbm(types[0]);
@@ -481,6 +481,8 @@ namespace extractor
                         caches.Add(string.Format(mask, x0_1, x1, x2, i));
                     }
                 }
+                else
+                    caches = caches;
             }
 
             File.WriteAllLines("caches.txt", caches);
@@ -585,7 +587,7 @@ namespace extractor
             }
             File.WriteAllLines("good.txt", good);
 
-            // gen_caches(output_list);
+            gen_caches(output_list);
         }
     }
 }
