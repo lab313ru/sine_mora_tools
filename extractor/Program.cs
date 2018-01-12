@@ -9,6 +9,7 @@ namespace extractor
 {
     class Program
     {
+        const string extracted_dir = "extracted";
         const string good_paths = "paths.txt";
         const string hash_nf = "hash_nf.txt";
         const string hash1_log = "hash1_log.txt";
@@ -492,22 +493,22 @@ namespace extractor
                             Lz4.LZ4_decode(inp, outp, input.Length);
 
                     string name = findPath(good, (uint)b.dwPath);
-                    string path = Path.GetDirectoryName(list[i]) + '\\' + Path.GetFileNameWithoutExtension(list[i]) + '\\' + name;
-                    path = path.Replace('/', '\\');
+                    string path = Path.GetDirectoryName(list[i]) + Path.DirectorySeparatorChar + extracted_dir + Path.DirectorySeparatorChar + Path.GetFileNameWithoutExtension(list[i]) + Path.DirectorySeparatorChar + name;
+                    path = path.Replace('/', Path.DirectorySeparatorChar);
                     path = Path.GetDirectoryName(path);
                     
 
                     Directory.CreateDirectory(path);
 
                     string ext = getExt((uint)b.dwExt);
-                    string fname = String.Format("{0}\\{1}.{2}", path, Path.GetFileNameWithoutExtension(name), ext);
+                    string fname = String.Format("{0}{1}{2}.{3}", path, Path.DirectorySeparatorChar, Path.GetFileNameWithoutExtension(name), ext);
                     string h1 = String.Format("{0:X8}", b.dwPath);
                     string h2 = String.Format("{0:X8}", b.dwFName);
 
                     if (!File.Exists(fname))
                     {
                         File.WriteAllBytes(fname, output);
-                        File.Delete(path + '\\' + h1 + ext);
+                        File.Delete(path + Path.DirectorySeparatorChar + h1 + ext);
                     }
 
                     if (h1 != name)
@@ -525,7 +526,7 @@ namespace extractor
 
                     File.AppendAllText(hash1_log, name + Environment.NewLine);
 
-                    Console.WriteLine(String.Format("{0}/{1}: {2} {3}%", i, len, name, (pos * 100) / size));
+                    Console.WriteLine(String.Format("{0}/{1}: {2} {3}%", i + 1, len, name, (pos * 100) / size));
                 }
             }
             File.WriteAllLines("good.txt", good);

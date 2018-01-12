@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extractor", "extractor\extractor.csproj", "{8B4E2638-4950-475F-AA38-ACE336E30F31}"
 EndProject
@@ -16,17 +16,20 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{8B4E2638-4950-475F-AA38-ACE336E30F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B4E2638-4950-475F-AA38-ACE336E30F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B4E2638-4950-475F-AA38-ACE336E30F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B4E2638-4950-475F-AA38-ACE336E30F31}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2C03097B-CC7C-4CBD-AA77-D494BB6885E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2C03097B-CC7C-4CBD-AA77-D494BB6885E8}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{2C03097B-CC7C-4CBD-AA77-D494BB6885E8}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{CC9619ED-315A-4541-84DD-03A75B3BF310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC9619ED-315A-4541-84DD-03A75B3BF310}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC9619ED-315A-4541-84DD-03A75B3BF310}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC9619ED-315A-4541-84DD-03A75B3BF310}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2382B6DE-890D-461C-94D2-A1ADB80E7E94}
 	EndGlobalSection
 EndGlobal
