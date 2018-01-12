@@ -100,6 +100,7 @@ namespace extractor
                 case 0x1F92D4DE: return "ssb";
                 case 0x08F2025B: return "mtl";
                 case 0x35B99DDD: return "cpp";
+                case 0x483D0203: return "unicode";
                 default: return "";
             }
         }
