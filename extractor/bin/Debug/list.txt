@@ -1,5 +1,5 @@
-d:\downloads\Sine.Mora.EX-SKIDROW\sr-sinemoraex\extracted\gui_loading_logos_thq.bin
-d:\downloads\Sine.Mora.EX-SKIDROW\sr-sinemoraex\extracted\gui_texttyper.bin
-d:\downloads\Sine.Mora.EX-SKIDROW\sr-sinemoraex\extracted\memfile.bin
-d:\downloads\Sine.Mora.EX-SKIDROW\sr-sinemoraex\extracted\render.bin
-d:\downloads\Sine.Mora.EX-SKIDROW\sr-sinemoraex\extracted\sinemora_data.bin
+d:\Games\Sine Mora EX\gui_loading_logos_thq.bin
+d:\Games\Sine Mora EX\gui_texttyper.bin
+d:\Games\Sine Mora EX\memfile.bin
+d:\Games\Sine Mora EX\render.bin
+d:\Games\Sine Mora EX\sinemora_data.bin
