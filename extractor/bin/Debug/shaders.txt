@@ -1,0 +1,95 @@
+"NULLPIXELSHADER" : ["shadowmap.hlsl", "psmain"]
+"NULLPIXELSHADER" : ["waterplane.hlsl", "psmain_depth"]
+"PIXELSHADER" : ["bloomcut.hlsl", "psmain"]
+"PIXELSHADER" : ["bullet.hlsl", "psmain"],
+"PIXELSHADER" : ["cheap.hlsl", "psmain"],
+"PIXELSHADER" : ["default.hlsl", "psmain"],
+"PIXELSHADER" : ["depthtolinear.hlsl", "psmain"]
+"PIXELSHADER" : ["depthtolinear.hlsl", "psmain2x"]
+"PIXELSHADER" : ["depthtolinear.hlsl", "psmain4x"]
+"PIXELSHADER" : ["depthtolinear.hlsl", "psmain4xmatch"]
+"PIXELSHADER" : ["doorfade.hlsl", "psmain_nomarker"],
+"PIXELSHADER" : ["editor_line_3d.hlsl", "psmain"]
+"PIXELSHADER" : ["editor_sphere.hlsl", "psmain"]
+"PIXELSHADER" : ["editor_sprite_2d.hlsl", "psmain"]
+"PIXELSHADER" : ["font.hlsl", "psmain"],
+"PIXELSHADER" : ["font_mono.hlsl", "psmain"],
+"PIXELSHADER" : ["fsquad.hlsl", "psmain", 5]
+"PIXELSHADER" : ["gaussian.hlsl", "psmain"]
+"PIXELSHADER" : ["guitexture.hlsl", "psmain"],
+"PIXELSHADER" : ["guitexture.hlsl", "psmain_grayscale"],
+"PIXELSHADER" : ["highlight.hlsl", "psmain"]
+"PIXELSHADER" : ["laser.hlsl", "psmain"],
+"PIXELSHADER" : ["lightshaft.hlsl", "psmain"],
+"PIXELSHADER" : ["lit.hlsl", "psmain", 18],
+"PIXELSHADER" : ["lit.hlsl", "psmain"],
+"PIXELSHADER" : ["lit.hlsl", "psmain_nomarker", 18],
+"PIXELSHADER" : ["lit.hlsl", "psmain_nomarker_atest", 18],
+"PIXELSHADER" : ["lit_metal.hlsl", "psmain", 18],
+"PIXELSHADER" : ["lit_metal.hlsl", "psmain_nomarker", 18],
+"PIXELSHADER" : ["lit_metal.hlsl", "psmain_paint", 18],
+"PIXELSHADER" : ["ng_resolve.hlsl", "psmain2x"]
+"PIXELSHADER" : ["ng_resolve.hlsl", "psmain4x"]
+"PIXELSHADER" : ["particle.hlsl", "psmain", 2],
+"PIXELSHADER" : ["particle.hlsl", "psmain_alpha", 2],
+"PIXELSHADER" : ["particle.hlsl", "psmain_alpha_soft", 2],
+"PIXELSHADER" : ["particle.hlsl", "psmain_bullet"],
+"PIXELSHADER" : ["particle.hlsl", "psmain_premul", 2],
+"PIXELSHADER" : ["particle.hlsl", "psmain_premul_soft", 2],
+"PIXELSHADER" : ["shield_skin.hlsl", "psmain"],
+"PIXELSHADER" : ["simple.hlsl", "psmain"]
+"PIXELSHADER" : ["tracer.hlsl", "psmain"],
+"PIXELSHADER" : ["transition.hlsl", "psmain"]
+"PIXELSHADER" : ["upscale.hlsl", "psmain"]
+"PIXELSHADER" : ["upscale.hlsl", "psmain_simple"]
+"PIXELSHADER" : ["vegetation-shadowmap.hlsl", "psmain"],
+"PIXELSHADER" : ["vegetation-shadowmap.hlsl", "psmain_depth"],
+"PIXELSHADER" : ["vegetation.hlsl", "psmain", 18],
+"PIXELSHADER" : ["waterplane.hlsl", "psmain", 18],
+"PIXELSHADER" : ["waterstream.hlsl", "psmain", 18],
+"VERTEXSHADER" : ["bloomcut.hlsl", "vsmain"],
+"VERTEXSHADER" : ["bullet.hlsl", "vsmain"],
+"VERTEXSHADER" : ["cheap.hlsl", "vsmain"],
+"VERTEXSHADER" : ["default.hlsl", "vsmain"],
+"VERTEXSHADER" : ["depthtolinear.hlsl", "vsmain"],
+"VERTEXSHADER" : ["doorfade.hlsl", "vsmain_fade"],
+"VERTEXSHADER" : ["editor_line_3d.hlsl", "vsmain"],
+"VERTEXSHADER" : ["editor_sphere.hlsl", "vsmain"],
+"VERTEXSHADER" : ["editor_sprite_2d.hlsl", "vsmain"],
+"VERTEXSHADER" : ["font.hlsl", "vsmain"],
+"VERTEXSHADER" : ["font_mono.hlsl", "vsmain"],
+"VERTEXSHADER" : ["fsquad.hlsl", "vsmain"],
+"VERTEXSHADER" : ["gaussian.hlsl", "vsmain"],
+"VERTEXSHADER" : ["guitexture.hlsl", "vsmain"],
+"VERTEXSHADER" : ["guitexture.hlsl", "vsmain_s"],
+"VERTEXSHADER" : ["highlight.hlsl", "vsmain"],
+"VERTEXSHADER" : ["highlight.hlsl", "vsmain_skin", 8],
+"VERTEXSHADER" : ["laser.hlsl", "vsmain"],
+"VERTEXSHADER" : ["lightshaft.hlsl", "vsmain"],
+"VERTEXSHADER" : ["lit.hlsl", "vsmain", 2],
+"VERTEXSHADER" : ["lit.hlsl", "vsmain"],
+"VERTEXSHADER" : ["lit.hlsl", "vsmain_metal", 2],
+"VERTEXSHADER" : ["lit.hlsl", "vsmain_metal_fade", 2],
+"VERTEXSHADER" : ["lit_skin.hlsl", "vsmain", 8],
+"VERTEXSHADER" : ["lit_skin.hlsl", "vsmain_metal", 8],
+"VERTEXSHADER" : ["ng_resolve.hlsl", "vsmain"],
+"VERTEXSHADER" : ["particle-decal.hlsl", "vsmain"],
+"VERTEXSHADER" : ["particle-ground.hlsl", "vsmain", 2],
+"VERTEXSHADER" : ["particle-ocean.hlsl", "vsmain"],
+"VERTEXSHADER" : ["particle.hlsl", "vsmain", 2],
+"VERTEXSHADER" : ["particle.hlsl", "vsmain"],
+"VERTEXSHADER" : ["particle.hlsl", "vsmain_alpha", 2],
+"VERTEXSHADER" : ["particle.hlsl", "vsmain_gui", 2],
+"VERTEXSHADER" : ["shadowmap.hlsl", "vsmain", 2],
+"VERTEXSHADER" : ["shadowmap.hlsl", "vsmain"],
+"VERTEXSHADER" : ["shadowmap_skin.hlsl", "vsmain", 8],
+"VERTEXSHADER" : ["shield_skin.hlsl", "vsmain"],
+"VERTEXSHADER" : ["simple.hlsl", "vsmain"],
+"VERTEXSHADER" : ["tracer.hlsl", "vsmain"],
+"VERTEXSHADER" : ["transition.hlsl", "vsmain"],
+"VERTEXSHADER" : ["upscale.hlsl", "vsmain"],
+"VERTEXSHADER" : ["vegetation-shadowmap.hlsl", "vsmain", 2],
+"VERTEXSHADER" : ["vegetation.hlsl", "vsmain", 2],
+"VERTEXSHADER" : ["waterplane.hlsl", "vsmain", 2],
+"VERTEXSHADER" : ["waterplane.hlsl", "vsmain_depth"],
+"VERTEXSHADER" : ["waterstream.hlsl", "vsmain", 2],
