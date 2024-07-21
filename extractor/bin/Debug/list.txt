@@ -1,5 +1,0 @@
-d:\Games\Sine Mora EX\gui_loading_logos_thq.bin
-d:\Games\Sine Mora EX\gui_texttyper.bin
-d:\Games\Sine Mora EX\memfile.bin
-d:\Games\Sine Mora EX\render.bin
-d:\Games\Sine Mora EX\sinemora_data.bin
