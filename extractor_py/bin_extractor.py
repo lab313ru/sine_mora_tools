@@ -123,6 +123,15 @@ def load_words(dd):
     return words
 
 
+HASHES = [
+    0x5DEFD6DA,
+    0x5CA53F3A,
+    0x69C0D1F9,
+    0x76DC64B8,
+    0x5209CDC6
+]
+
+
 def main(path):
     paths = load_paths()
     size = os.path.getsize(path)
@@ -151,4 +160,18 @@ def main(path):
 
 
 if __name__ == '__main__':
+    with open('test_list.txt') as f:
+        for ln in f.readlines():
+            ln = ln.rstrip()
+
+            fd, fn = os.path.split(ln)
+            fn, fe = os.path.splitext(fn)
+
+            nm = fn + '.sph'
+            hs = sdbm(nm)
+            if hs in HASHES:
+                print('found: %s %08x' % (nm, hs))
+
+    exit()
+
     main(sys.argv[1])

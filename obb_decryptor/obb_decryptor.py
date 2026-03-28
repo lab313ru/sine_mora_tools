@@ -256,6 +256,25 @@ EXTS = {
     0x483D0203: "unicode"
 }
 
+HASHES = [
+    0x5DEFD6DA,
+    0x5CA53F3A,
+    0x69C0D1F9,
+    0x76DC64B8,
+    0x5209CDC6
+]
+
+
+PAT = re.compile(rb'[0-9a-z\-_+=]+?')
+
+
+def check_for_found(buf):
+    for fnd in PAT.findall(buf):
+        hs = sdbm(0, fnd + b'.sph')
+
+        if hs in HASHES:
+            print('found: %s => %08x' % (fnd, hs))
+
 
 def main(path):
     fd, fn = os.path.split(path)
@@ -268,27 +287,10 @@ def main(path):
         for name, size in tbl.items():
             nn, ne = os.path.splitext(name)
 
-            # hs = sdbm(0, nn.encode())
-            #
-            # if hs in NOT_FOUND_PATHS:
-            #     print('path found: %s => %08X' % (nn, hs))
-            #
-            # n_path, n_name = os.path.split(name)
-            # nn_name, ne_name = os.path.splitext(n_name)
-            #
-            # for ext in EXTS:
-            #     hs = sdbm(0, ('%s%s' % (nn_name, ext)).encode())
-            #
-            #     if hs in NOT_FOUND_NAMES:
-            #         print('name found: %s => %08X' % (nn, hs))
-            #         break
-
-            print('extracting %s from 0x%08X, size=0x%X... ' % (name, f.tell(), size), end='')
+            # print('extracting %s from 0x%08X, size=0x%X... ' % (name, f.tell(), size), end='')
             dec = read_block(name, f, size)
 
-            if not name.endswith('.level'):
-                print('done!')
-                continue
+            check_for_found(dec)
 
             pp = os.path.join(fn_ex, name)
             xx, _ = os.path.split(pp)
@@ -298,26 +300,11 @@ def main(path):
             with open(pp, 'wb') as w:
                 w.write(dec)
 
-            print('done!')
+            # print('done!')
 
             if name.endswith('.pvr'):
                 nn, ne = os.path.splitext(pp)
                 Popen(['PVRTexToolCLI.exe', '-i', pp, '-noout', '-d', '%s.png' % nn], shell = True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-            elif name.endswith('.level'):
-                px = STR.findall(dec)
-
-                for p in px:
-                    try:
-                        pn, pe = os.path.split(p.decode())
-                    except Exception:
-                        continue
-
-                    for ext in EXTS:
-                        hs = sdbm(0, ('%s%s' % (pe, ext)).encode())
-
-                        if hs in NOT_FOUND_NAMES:
-                            print('name found: %s => %08X' % (nn, hs))
-                            continue
 
 
 if __name__ == '__main__':
